@@ -1,0 +1,9 @@
+! Fonts {{{
+Xft.dpi: 160
+Xft.antialias: true      
+Xft.hinting: false
+Xft.rgba: rgb 
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+! }}}
