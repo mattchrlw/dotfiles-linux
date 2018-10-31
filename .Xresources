@@ -1,7 +1,7 @@
 ! Fonts {{{
-Xft.dpi: 160
+Xft.dpi: 192
 Xft.antialias: true      
-Xft.hinting: false
+Xft.hinting: true
 Xft.rgba: rgb 
 Xft.autohint: false
 Xft.hintstyle: hintslight

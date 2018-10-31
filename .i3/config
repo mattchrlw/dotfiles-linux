@@ -40,7 +40,7 @@ floating_modifier $mod
 ### modifications start
 ### modifications start
 
-gaps inner 10
+gaps inner 0
 gaps outer 0
 
 for_window [class="^.*"] border pixel 0
@@ -244,8 +244,14 @@ bindsym $mod+r mode "resize"
 # Please remove the following exec line:
 #######################################################################
 # exec i3-config-wizard
-exec --no-startup-id feh --bg-fill ~/Pictures/abstract.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/tokyo3.jpg
 exec --no-startup-id setxkbmap -option ctrl:nocaps
 exec --no-startup-id insync start
-# exec --no-startup-id xrandr --output eDP1 --mode 2560x1600 --dpi 160
+exec --no-startup-id xrandr --output eDP1 --mode 2560x1600 --dpi 192
 for_window [title="Mimicraft"] floating enable
+
+bindsym --release Ctrl+Shift+3 exec --no-startup-id "maim | xclip -selection clipboard -t image/png"
+bindsym --release Ctrl+Shift+4 exec --no-startup-id "maim -s | xclip -selection clipboard -t image/png"
+#bindsym --release Ctrl+Shift+5 exec --no-startup-id "maim -i -u $(xdotool getactivewindow) | xclip -selection clipboard -t image/png"
+
+bindsym --release Ctrl+Shift+5 exec --no-startup-id "maim -i -u $(xdotool getactivewindow) ~/$(date +%s).png"
